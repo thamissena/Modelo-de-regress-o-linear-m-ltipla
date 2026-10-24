@@ -6,7 +6,7 @@ Quantum Finance por meio de regressão linear múltipla e árvore de decisão.
 ## Estrutura
 
 - `data/Base_ScoreCredito_QuantumFinance(10).csv`: base com 10.127 clientes.
-- `notebook/modelo_regressao_linear_multipla_score.ipynb`: análise completa,
+- `notebook/modelo_credit_scoring.ipynb`: análise completa,
   treinamento, diagnóstico, comparação dos modelos e simulador em Python.
 - `notebook/requirements.txt`: dependências do projeto.
 
@@ -30,7 +30,7 @@ artefatos gerados, não são necessários para executar a análise do zero.
 ```bash
 cd notebook
 pip install -r requirements.txt
-jupyter notebook modelo_regressao_linear_multipla_score.ipynb
+jupyter notebook modelo_credit_scoring.ipynb
 ```
 
 Execute as células do notebook a partir da pasta `notebook/`. O código localiza

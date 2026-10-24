@@ -7,7 +7,7 @@ Modelo de Credit Scoring da Quantum Finance usando a base
 
 | Arquivo | Conteúdo |
 |---|---|
-| `modelo_regressao_linear_multipla_score.ipynb` | Notebook completo, já executado (com gráficos e resultados) |
+| `modelo_credit_scoring.ipynb` | Notebook completo, já executado (com gráficos e resultados) |
 | `requirements.txt` | Dependências |
 
 Ao executar o notebook, são gerados nesta pasta `modelo_score.json`, com os
@@ -36,7 +36,7 @@ analista informa os dados do cliente e obtém o score e a faixa de risco.
 
 ```bash
 pip install -r requirements.txt
-jupyter notebook modelo_regressao_linear_multipla_score.ipynb   # gera o JSON e o Excel
+jupyter notebook modelo_credit_scoring.ipynb   # gera o JSON e o Excel
 ```
 
 Execute o notebook a partir desta pasta ou abra-o pelo diretório raiz. O código
