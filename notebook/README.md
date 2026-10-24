@@ -1,16 +1,18 @@
 # Notebook — Regressão Linear Múltipla (target: `SCORE_CREDITO`)
 
-Modelo de Credit Scoring da Quantum Finance usando a base `../data/Base_ScoreCredito_QuantumFinance*.csv`.
+Modelo de Credit Scoring da Quantum Finance usando a base
+`../data/Base_ScoreCredito_QuantumFinance(10).csv`.
 
 ## Arquivos
 
 | Arquivo | Conteúdo |
 |---|---|
 | `modelo_regressao_linear_multipla_score.ipynb` | Notebook completo, já executado (com gráficos e resultados) |
-| `simulador_score_credito.xlsx` | Simulador em Excel: o analista digita os dados do cliente e a planilha calcula o score e a faixa de risco |
-| `app_simulador.py` | Simulador web em Streamlit |
-| `modelo_score.json` | Coeficientes do modelo final (usados pelo app) |
 | `requirements.txt` | Dependências |
+
+Ao executar o notebook, são gerados nesta pasta `modelo_score.json`, com os
+coeficientes do modelo final, e `simulador_score_credito.xlsx`, no qual o
+analista informa os dados do cliente e obtém o score e a faixa de risco.
 
 ## Etapas do notebook
 
@@ -21,7 +23,7 @@ Modelo de Credit Scoring da Quantum Finance usando a base `../data/Base_ScoreCre
 7. **Suposições** — QQ-plot e Shapiro-Wilk, resíduo × previsto e Breusch-Pagan, Durbin-Watson, VIF
 8. **Qualidade do modelo** — R², R² ajustado, RMSE, MAE e MAPE na base de teste
 9. **Árvore de decisão** — mesmas métricas, importância das variáveis e comparação com a regressão
-10. **Simulador** — função Python, planilha Excel e app Streamlit
+10. **Simulador** — função Python, coeficientes em JSON e planilha Excel
 
 ## Principais resultados (base de teste)
 
@@ -34,6 +36,8 @@ Modelo de Credit Scoring da Quantum Finance usando a base `../data/Base_ScoreCre
 
 ```bash
 pip install -r requirements.txt
-jupyter notebook modelo_regressao_linear_multipla_score.ipynb   # gera de novo o JSON e o Excel
-streamlit run app_simulador.py                                  # abre o simulador no navegador
+jupyter notebook modelo_regressao_linear_multipla_score.ipynb   # gera o JSON e o Excel
 ```
+
+Execute o notebook a partir desta pasta ou abra-o pelo diretório raiz. O código
+procura a base em `../data` e `data` para funcionar nos dois contextos.

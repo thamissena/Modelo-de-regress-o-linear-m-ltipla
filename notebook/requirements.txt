@@ -7,4 +7,3 @@ statsmodels
 scikit-learn
 openpyxl
 jupyter
-streamlit
